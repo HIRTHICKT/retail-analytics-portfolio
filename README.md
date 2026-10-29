@@ -144,3 +144,6 @@ This project currently focuses on order status and delivery performance. It does
 ## Author
 
 Data Analytics Portfolio Project — Python, MySQL, SQL, and Tableau.
+
+
+![alt text](reports/dashboard_screenshot.png)
