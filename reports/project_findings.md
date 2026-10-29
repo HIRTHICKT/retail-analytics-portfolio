@@ -43,3 +43,6 @@ Python, pandas, MySQL, SQL, and Tableau.
 ## 7. Recommended Next Analysis
 
 Extend the project to include sales revenue, payment methods, product categories, customer geography, and monthly trends.
+
+
+![alt text](dashboard_screenshot.png)
