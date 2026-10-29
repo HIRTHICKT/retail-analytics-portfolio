@@ -1,0 +1,27 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs and temporary files
+logs/*
+!logs/.gitkeep
+~*
+
+# Raw source data — keep local, do not upload by default
+data/raw/
+
+# Local database exports and temporary files
+*.sql.gz
+*.dump
+
+# OS files
+.DS_Store
+Thumbs.db
