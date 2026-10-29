@@ -2,13 +2,13 @@
 
 ## 1. Project Objective
 
-Analyze Brazilian e-commerce order data to understand order-status distribution and delivery performance.
+Analyze Brazilian e-commerce order data to understand order-status distribution and evaluate delivery performance and operational efficiency.
 
 ## 2. Dataset Overview
 
-- Total order records: 99,441
-- Unique order IDs: 99,441
-- Source: Brazilian E-Commerce Public Dataset by Olist
+- **Total order records:** 99,441
+- **Unique order IDs:** 99,441
+- **Data source:** Brazilian E-Commerce Public Dataset by Olist
 
 ## 3. Key Findings
 
@@ -24,25 +24,40 @@ Analyze Brazilian e-commerce order data to understand order-status distribution 
 
 ## 4. Interpretation
 
-- Delivered orders account for 97.02% of all recorded orders.
-- The average delivery duration among orders with valid delivery timestamps is approximately 12.56 days.
-- Approximately 8.11% of delivered orders with delay information were delivered after the estimated date, based on the project's SQL KPI calculation.
-- The negative average delivery delay indicates that actual delivery occurred earlier than the estimated date on average.
+- Delivered orders account for approximately **97.02% of all recorded orders**.
+- The average delivery duration is approximately **12.56 days**, calculated using orders with valid purchase and delivery timestamps.
+- A total of **7,826 delivered orders** were delivered after their estimated delivery dates.
+- The late-delivery rate is **8.11%**, calculated by dividing late delivered orders by all delivered orders (96,478).
+- The average delivery delay is **-11.18 days**, indicating that orders were delivered earlier than their estimated dates on average.
 
 ## 5. Data Quality
 
-- The dataset contains 99,441 unique order IDs.
-- Some records have missing delivery timestamps.
-- Missing delivery durations were preserved as missing values rather than replaced with zero.
-- Delivery delay is calculated using actual delivery date minus estimated delivery date.
+- The dataset contains 99,441 unique order IDs, with no duplicate order IDs.
+- Some records have missing approval and delivery timestamps.
+- Missing delivery durations and delay values were preserved as missing values rather than replaced with zero.
+- Delivery duration is calculated as the time between purchase and actual customer delivery.
+- Delivery delay is calculated as the difference between actual customer delivery and estimated delivery dates. Positive values indicate late delivery; negative values indicate early delivery.
 
-## 6. Tools Used
+## 6. Tools and Technologies Used
 
-Python, pandas, MySQL, SQL, and Tableau.
+- **Python:** Data processing and cleaning
+- **pandas:** Data manipulation and analysis
+- **MySQL:** Data storage
+- **SQL:** Data validation, aggregation, and KPI calculations
+- **Tableau:** Dashboard development and visualization
 
-## 7. Recommended Next Analysis
+## 7. Recommended Next Steps
 
-Extend the project to include sales revenue, payment methods, product categories, customer geography, and monthly trends.
+Future enhancements could include:
 
+- Analyzing sales revenue and payment methods.
+- Identifying top-performing product categories.
+- Comparing delivery performance across customer regions.
+- Analyzing monthly order and delivery trends.
+- Adding interactive dashboard filters and additional business KPIs.
 
-![alt text](dashboard_screenshot.png)
+---
+
+**Dashboard Preview**
+
+![Retail Analytics Dashboard](dashboard_screenshot.png)
